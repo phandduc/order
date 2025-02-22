@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đặt Hàng Cherry</title>
+    <style>
+    body { font-family: Arial, sans-serif; 
+        background-image: url('https://i.pinimg.com/736x/82/83/95/828395288a7b856743237cbac1c54f35.jpg') ;
+        background-size: contain ; 
+        background-position: center;
+        margin: 0; padding: 0; }
+    .products { display: flex; flex-wrap: wrap; justify-content: center; padding: 20px; }
+    .product { background-color:rgba(164, 136, 72, 0.6); margin: 10px; padding: 20px; border: 1px solid #ddd; width: 300px; text-align: center; }
+    .product img { width: 100%; height: 150px; }
+    .product h2 { font-size: 1.5em; }
+    .product p { font-size: 1em; color: #666; }
+    .product button { background-color: #4CAF50; color: white; border: none; padding: 10px 20px; margin-top: 10px; cursor: pointer; }
+    .product button:hover { background-color: #45a049; }
+    .product input {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        } 
+    .input-group {margin-bottom: 15px;text-align: left;}    
+    .product-container { margin: 20px; background-color: white; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+    .product-image { flex: 1; }
+    .product-image img { width: 100%; border-radius: 10px; }
+    .product-details { flex: 2; margin-left: 20px; }
+    .product-details h1 { font-size: 24px; }
+    .product-details p { margin: 5px 0; }
+    .price { color: #4CAF50; font-size: 28px; font-weight: bold; }
+    .quantity { display: flex; align-items: center; margin: 10px 0; }
+    .quantity button { padding: 5px 10px; margin: 0 5px; }
+    .actions { display: flex; gap: 10px; }
+    .actions button { background-color: #4CAF50; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; }
+    .info-box { border: 2px solid #4CAF50; padding: 10px; margin-left: 10px; border-radius: 10px; background-color: #f9fff9; }
+    .info-box ul { list-style: none; padding: 0; }
+    .info-box li { margin: 10px 0; text-align: left;}
+    nav { display: flex; justify-content: center; background-color:	rgb(210, 180, 140) }
+    nav a { color: white; padding: 14px 20px; text-decoration: none; }
+    nav a:hover { 
+      transform: scale(1.1);
+      transition: transform 0.3s ease;
+      border: 2px solid;
+      border-image: linear-gradient(45deg, #4CAF50, #ffffff);
+      border-image-slice: 1;
+      border-radius: 15px;
+      padding: 12px 18px;
+      animation: borderAnimation 10s linear infinite;
+    }
+    .header-background {
+        background-image: url('https://img6.thuthuatphanmem.vn/uploads/2022/03/16/background-mon-an-minh-hoa_024948610.jpg') ;
+        background-size: cover; 
+      background-position: center; 
+      height: 100px; 
+      display: flex;  
+      align-items: center;
+      justify-content: center;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.7); 
+      color: rgb(14, 14, 14); padding: 20px; text-align: center;
+      font-size: 30px; font-weight: bold;
+      font-family: "Brush Script MT ", cursive;
+    }
+    .chu {font-weight: bold; color: black; font-size: 30px;} 
+    .chu1 {color: #067309;font-size: 30px;}
+    footer { background-color: #333; color: white; text-align: justify; padding: 5px; position: relative; bottom: 0; width: 100%; font-size: 17px;}
+    </style>
+</head>
+<body>
+    <header class="header-background">
+        <h1>MINIMART</h1>
+    </header>
+    <nav>
+       <a href="Trang chủ.html">Trang chủ</a>
+    <a href="Giới Thiệu.html">Giới thiệu</a>
+    <a href="web con mua sắm.html">Sản phẩm</a>
+    </nav>
+    <div class="products">
+            <div class="product">
+            <img src="https://i.pinimg.com/736x/6b/43/96/6b439654b065ed09fd25b1161954f2d1.jpg" alt="Rau củ hữu cơ">
+            <h2>Món ăn chế biến sẵn</h2>
+            <p> <strong class="chu">Giá: </strong> 
+                <strong class="chu1" >45.000 VNĐ/phần</strong> </p></div>
+            <div class="product">
+            <div class="input-group">
+                <label for="quantity">Số lượng:</label>
+                <input type="number" id="quantity" value="1" min="1">
+            </div>
+            <div class="input-group">
+                <label for="phone">Số điện thoại:</label>
+                <input type="text" id="phone" placeholder="Nhập số điện thoại">
+            </div>
+            <div class="input-group">
+                <label for="address">Địa chỉ:</label>
+                <input type="text" id="address" placeholder="Nhập địa chỉ giao hàng">
+            </div>
+            <div class="input-group">
+                <label for="bank">Số tài khoản ngân hàng:</label>
+                <input type="text" id="bank" placeholder="Nhập STK ngân hàng">
+            </div>
+            <div class="buttons">
+                <a href="web con mua sắm.html"><button class="checkout">Thanh toán</button></a>
+            </div>
+            </div>
+        <div class="product">
+            <div class="info-box">
+                <h3>Duy nhất tại MINIMARK</h3>
+                <ul>
+                <li>🚚 Free ship 5km cho đơn từ 499k</li>
+                <li>⏱ Giao hàng trong 2h</li>
+                <li>✔️ Tích điểm tất cả sản phẩm</li>
+                <li>🥗 Thực phẩm hữu cơ tốt cho sức khỏe</li>
+                </ul>
+            </div>
+            </div>
+    </div>
+    <footer>
+        <div >
+          <p> Liên hệ </p>
+          <ul>
+            <li> Địa chỉ: Số 123, Đường ABC, Thành phố XYZ </li>
+            <li> Hotline: 123-456-789</li>
+            <li> Email: contact@minimart.vn </li>
+          </ul>
+        </div>
+        <div >
+          <p>&copy; Bản quyền thuộc tổ 1</p> 
+        </div>
+        
+      </footer>
+</body>
+</html>

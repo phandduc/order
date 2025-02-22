@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Organic Food</title>
+  <style>
+    .body-edit { 
+      background-image: url('https://i.pinimg.com/736x/77/15/8d/77158d2ebb08b2e9724f2577aa8b1fe1.jpg') ;
+      background-size: cover; 
+      background-position: center; 
+      display: block;  
+    }
+    nav { display: flex; justify-content: center; background-color: rgb(210, 180, 140) }
+    nav a { color: white; padding: 14px 20px; text-decoration: none; }
+    .header-background {
+      background-image: url('https://img6.thuthuatphanmem.vn/uploads/2022/03/16/background-mon-an-minh-hoa_024948610.jpg') ;
+      background-size: cover; 
+      background-position: center; 
+      height: 100px; 
+      display: flex;  
+      align-items: center;
+      justify-content: center;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.7); 
+      color: rgb(14, 14, 14); padding: 20px; text-align: center;
+      font-size: 30px;font-weight: bold;
+      font-family: "Brush Script MT ", cursive;
+    }
+    .can-giua-justify {
+        width: 60%;               
+        margin: 0 auto;           
+        text-align: justify;      
+        padding: 20px; 
+        font-size: 30px;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+    }
+    nav a:hover { 
+      transform: scale(1.1);
+      transition: transform 0.3s ease;
+      border: 2px solid;
+      border-image: linear-gradient(45deg, #4CAF50, #ffffff);
+      border-image-slice: 1;
+      border-radius: 15px;
+      padding: 12px 18px;
+      animation: borderAnimation 10s linear infinite;
+    }
+    @keyframes borderAnimation {
+      to { border-image-source: linear-gradient(405deg, #ffffff, #4CAF50); }
+    }
+    .hero { text-align: center; padding: 10px; background-color: #e7ffe7; }
+    .hero h1 { font-size: 2.5em; }
+    
+    footer { background-color: #333; color: white; text-align: justify; padding: 5px; position: relative; bottom: 0; width: 100%; font-size: 17px;}
+    .video-container {
+            display: block;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;}
+  </style>
+</head>
+<body>
+  <header class="header-background">
+    <h1>MINIMART</h1>
+  </header>
+  <nav>
+    <a href="Trang chủ.html">Trang chủ</a>
+    <a href="Giới Thiệu.html">Giới thiệu</a>
+    <a href="web con mua sắm.html">Sản phẩm</a>
+  </nav>
+  <div class="hero body-edit">
+    <div>
+      <p class="can-giua-justify"> 
+        Minimart là chuỗi cửa hàng chuyên cung cấp các sản phẩm thực phẩm thiên nhiên, hữu cơ và sạch. Chúng tôi luôn đặt lợi ích của khách hàng lên hàng đầu, và cam kết chỉ bán những sản phẩm có nguồn gốc rõ ràng, không sử dụng hóa chất hay phẩm màu nhân tạo.
+      </p> 
+      <p class="can-giua-justify">
+        Với mục tiêu mang lại sự lựa chọn thực phẩm an toàn và dinh dưỡng cho mọi gia đình, Minimart đã hợp tác với các nông trại và nhà cung cấp uy tín, có chứng nhận hữu cơ, để đem đến những sản phẩm tươi ngon, bổ dưỡng, đồng thời giúp bảo vệ sức khỏe và môi trường.
+      </p>
+      <p class="can-giua-justify">
+        Chất lượng sản phẩm của chúng tôi luôn được kiểm tra nghiêm ngặt từ khâu sản xuất đến tay người tiêu dùng. Hãy cùng chúng tôi bắt đầu hành trình chăm sóc sức khỏe ngay từ bữa ăn đầu tiên.
+      </p>
+    </div>
+    
+  </div>
+  <footer>
+    <div >
+      <p> Liên hệ </p>
+      <ul>
+        <li> Địa chỉ: Số 123, Đường ABC, Thành phố XYZ </li>
+        <li> Hotline: 123-456-789</li>
+        <li> Email: contact@minimart.vn </li>
+      </ul>
+    </div>
+    <div >
+      <p>&copy; Bản quyền thuộc tổ 1</p> 
+    </div>
+    
+  </footer>
+</body>
+</html>

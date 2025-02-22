@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Con Mua Sắm</title>
+  <style>
+    body { font-family: Arial, sans-serif; background-color: rgb(207, 255, 229)  ; margin: 0; padding: 0; }
+    .products { display: flex; flex-wrap: wrap; justify-content: center; padding: 20px; }
+    .product { background-color: white; margin: 10px; padding: 20px; border: 1px solid #ddd; width: 300px; text-align: center; }
+    .product img { width: 100%; height: 150px; }
+    .product h2 { font-size: 1.5em; }
+    .product p { font-size: 1em; color: #666; }
+    .product button { background-color: #4CAF50; color: white; border: none; padding: 10px 20px; margin-top: 10px; cursor: pointer; }
+    .product button:hover { background-color: #45a049; }
+    .product-container { margin: 20px; background-color: white; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+    .product-image { flex: 1; }
+    .product-image img { width: 100%; border-radius: 10px; }
+    .product-details { flex: 2; margin-left: 20px; }
+    .product-details h1 { font-size: 24px; }
+    .product-details p { margin: 5px 0; }
+    .price { color: #4CAF50; font-size: 28px; font-weight: bold; }
+    .quantity { display: flex; align-items: center; margin: 10px 0; }
+    .quantity button { padding: 5px 10px; margin: 0 5px; }
+    .actions { display: flex; gap: 10px; }
+    .actions button { background-color: #4CAF50; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; }
+    .info-box { border: 2px solid #4CAF50; padding: 15px; margin-left: 20px; border-radius: 10px; background-color: #f9fff9; }
+    .info-box ul { list-style: none; padding: 0; }
+    .info-box li { margin: 10px 0; }
+    nav { display: flex; justify-content: center; background-color: rgb(210, 180, 140) }
+    nav a { color: white; padding: 14px 20px; text-decoration: none; }
+    nav a:hover { 
+      transform: scale(1.1);
+      transition: transform 0.3s ease;
+      border: 2px solid;
+      border-image: linear-gradient(45deg, #4CAF50, #ffffff);
+      border-image-slice: 1;
+      border-radius: 15px;
+      padding: 12px 18px;
+      animation: borderAnimation 10s linear infinite;
+    }
+    H1 {font-weight: bold;
+      font-family: "Lucida Handwriting ", cursive;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+    }
+    .header-background {
+      background-image: url('https://img6.thuthuatphanmem.vn/uploads/2022/03/16/background-mon-an-minh-hoa_024948610.jpg') ;
+      background-size: cover; 
+      background-position: center; 
+      height: 100px; 
+      display: flex;  
+      align-items: center;
+      justify-content: center;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.7); 
+      color: rgb(14, 14, 14); padding: 20px; text-align: center;
+      font-size: 30px;font-weight: bold;
+      font-family: "Brush Script MT ", cursive;
+    }
+    .chu {font-weight: bold;} 
+    strong {color: #067309;}
+    footer { background-color: #333; color: white; text-align: justify; padding: 5px; position: relative; bottom: 0; width: 100%; font-size: 17px;}
+  </style>
+</head>
+<body>
+  <header class="header-background">
+    <h1>MINIMART</h1>
+  </header>
+  <nav>
+  <a href="Trang chủ.html">Trang chủ</a>
+    <a href="Giới Thiệu.html">Giới thiệu</a>
+    <a href="web con mua sắm.html">Sản phẩm</a>
+  </nav>
+  <H1>1.Thực phẩm tươi sống</H1>
+      <div class="products">
+        <div class="product">
+          <img src="https://i.pinimg.com/736x/a6/5d/50/a65d50dccae3d7669d02ff23a5c83fce.jpg" alt="Rau củ hữu cơ" />
+          <h2>Rau củ hữu cơ</h2>
+          <p>Giá chỉ từ <strong>35.000 VNĐ/kg</strong>  <br>
+            Tươi ngon, sạch sẽ, không thuốc trừ sâu.</p>
+          <a href="0.html"><button class="checkout">Mua ngay</button></a>
+        </div>
+        <div class="product">
+          <img  src="https://i.pinimg.com/736x/98/63/9a/98639aa2df1c0e96528cca5190f60807.jpg" alt="Trái cây tươi" />
+          <h2>Trái cây tươi</h2>
+          <p>Giá chỉ từ <strong>25.000 VNĐ/kg</strong>  <br>
+            Chọn lọc từ vườn,   đảm bảo ngọt tự nhiên.</p>
+          <a href="1.html"><button class="checkout">Mua ngay</button></a>
+        </div>
+        <div class="product">
+          <img src="https://www.phuthieufood.com/wp-content/uploads/2017/02/chon-mua-thit-ca.jpg" alt="Thịt và cá sạch" />
+          <h2>Thịt và cá sạch</h2>
+          <p>Giá chỉ từ <strong>120.000 VNĐ/kg</strong>  <br>
+            không kháng sinh, Không hóa chất.</p>
+          <a href="2.html"><button class="checkout">Mua ngay</button></a>
+        </div>
+      </div>
+  <H1>2.Thực phẩm chế biến sẵn</H1>
+      <div class="products">
+        <div class="product">
+          <img src=https://i.pinimg.com/736x/27/a9/55/27a95554f71d761f50cf30446a104d0c.jpg alt="Bánh mì nguyên cám" />
+          <h2>Bánh mì nguyên cám</h2>
+          <p>Giá chỉ từ <strong>30.000 VNĐ/ổ</strong>  <br>
+            Nguyên liệu từ thiên nhiên, <br> 
+            không phẩm màu.</p>
+          <a href="3.html"><button class="checkout">Mua ngay</button></a>
+        </div>
+        <div class="product">
+          <img src="https://i.pinimg.com/736x/6b/43/96/6b439654b065ed09fd25b1161954f2d1.jpg" alt="Món ăn chế biến sẵn" />
+          <h2>Món ăn chế biến sẵn</h2>
+          <p>Giá chỉ từ <strong>45.000 VNĐ/phần</strong>  <br>
+            Thực phẩm tươi, chế biến lành mạnh, <br>
+            tiện lợi cho mọi bữa ăn.</p>
+            <a href="4.html"><button class="checkout">Mua ngay</button></a>
+          </div>
+      </div> 
+  <H1>3.Đồ uống tự nhiên</H1>
+        <div class="products">
+          <div class="product">
+            <img src=https://i.pinimg.com/736x/e4/f5/e9/e4f5e9f70c20c379fcad87a03b93ec27.jpg alt="Nước ép trái cây nguyên chất" />
+            <h2>Nước ép trái cây</h2>
+            <p>Giá chỉ từ <strong>40.000 VNĐ/lít</strong>  <br>
+              Không thêm đường,<br> 
+              không phẩm màu.</p>
+              <a href="5.html"><button class="checkout">Mua ngay</button></a>
+            </div>
+          <div class="product">
+            <img src="https://cdn.nhathuoclongchau.com.vn/unsafe/800x0/https://cms-prod.s3-sgn09.fptcloud.com/nen_uong_tra_thao_moc_khi_nao_thi_tot_cho_suc_khoe_1_54b5d60c80.png" alt="Trà thảo mộc" />
+            <h2>Trà thảo mộc</h2>
+            <p>Giá chỉ từ <strong>60.000 VNĐ/hộp</strong>  <br>
+              Mang lại cảm giác thư giãn,  <br>
+              giải tỏa căng thẳng.</p>
+              <a href="đặt hàng\6.html"><button class="checkout">Mua ngay</button></a>
+            </div>
+        </div>
+  <H1>4.Gia vị và nguyên liệu hữu cơ</H1>
+      <div class="products">
+        <div class="product">
+          <img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFIKgQYR9QzkAMr7-jGMPdHbJugDDuOoTdwg&s alt="Gạo hữu cơ" />
+          <h2>Gạo hữu cơ</h2>
+          <p>Giá chỉ từ <strong>50.000 VNĐ/kg</strong>  <br>
+              Gạo sạch, thơm, <br> 
+              giữ nguyên giá trị dinh dưỡng.</p>
+              <a href="7.html"><button class="checkout">Mua ngay</button></a>
+            </div>
+          <div class="product">
+            <img src="https://i.pinimg.com/736x/d8/b4/6f/d8b46feb022862e272002dc0161668a9.jpg" alt="Ngũ cốc và hạt giống" />
+              <h2>Ngũ cốc và hạt giống</h2>
+              <p>Giá chỉ từ <strong>80.000 VNĐ/hộp</strong>  <br>
+                Tốt cho sức khỏe,   <br>
+                hỗ trợ tăng cường hệ miễn dịch.</p>
+                <a href="8.html"><button class="checkout">Mua ngay</button></a>
+              </div>
+      </div>
+  <H1>5.Sản phẩm cho sức khỏe và làm đẹp</H1>
+    <div class="products">
+      <div class="product">
+        <img src=https://i.pinimg.com/736x/b0/64/37/b06437205b45f63e77f965e544573029.jpg alt="Mật ong nguyên chất" />
+        <h2>Mật ong nguyên chất <br> 
+          từ tự nhiên</h2>
+        <p>Giá chỉ từ <strong>150.000 VNĐ/lít</strong>  <br>
+          Tự nhiên, không chất bảo quản.</p>
+          <a href="9.html"><button class="checkout">Mua ngay</button></a>
+    </div>
+      <div class="product">
+        <img src="https://i.pinimg.com/736x/4a/73/ac/4a73ac37333380509f174c809db2b878.jpg" alt="Dầu dừa, tinh dầu thiên nhiên" />
+        <h2>Dầu dừa, tinh dầu <br>thiên nhiên</h2>
+        <p>Giá chỉ từ <strong>100.000 VNĐ/chai</strong>  <br>
+          Chăm sóc da và tóc từ thiên nhiên.</p>
+          <a href="10.html"><button class="checkout">Mua ngay</button></a>
+      </div>
+    </div>
+    <footer>
+      <div >
+        <p> Liên hệ </p>
+        <ul>
+          <li> Địa chỉ: Số 123, Đường ABC, Thành phố XYZ </li>
+          <li> Hotline: 123-456-789</li>
+          <li> Email: contact@minimart.vn </li>
+        </ul>
+      </div>
+      <div >
+        <p>&copy; Bản quyền thuộc tổ 1</p> 
+      </div>
+    </footer>
+</body>
+</html>
